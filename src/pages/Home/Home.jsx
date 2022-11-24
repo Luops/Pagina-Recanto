@@ -1,12 +1,22 @@
 import React from 'react'
 
+//Components
 
-//CSS
-import "./home.css"
+//Styled components
+import { 
+  Container,
+  SecaoLogo
+} from "./styles.js"
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <Container>
+      {/* Seção que vai conter logo, background e slogan */}
+      <SecaoLogo>
+
+      </SecaoLogo>
+
+    </Container>
   )
 }
 

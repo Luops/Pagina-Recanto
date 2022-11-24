@@ -7,7 +7,8 @@ import {
     Logo,
     StyledNavbarCollapse,
     StyledNav,
-    StyledNavLink
+    StyledNavLink,
+    StyledNavBar
   } from "./styles"
 
 //Bootstrap
@@ -19,20 +20,20 @@ import {
 
 const Header = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="white" variant="white">
+    <StyledNavBar collapseOnSelect expand="lg" bg="white" variant="white">
       <StyledContainer>
         <Logo href="/" id='Logo'>Recanto</Logo>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <StyledNavbarCollapse id="responsive-navbar-nav" >
           <StyledNav>
-            <StyledNavLink href="">Quem somos</StyledNavLink>
-            <StyledNavLink href="#pricing">Cardápio</StyledNavLink>
-            <StyledNavLink href="#pricing">Eventos</StyledNavLink>
-            <StyledNavLink href="#pricing">Contatos</StyledNavLink>
+            <StyledNavLink href="#Quem somos">Quem somos</StyledNavLink>
+            <StyledNavLink href="#Cardápio">Cardápio</StyledNavLink>
+            <StyledNavLink href="#Eventos">Eventos</StyledNavLink>
+            <StyledNavLink href="#Contatos">Contatos</StyledNavLink>
           </StyledNav>
         </StyledNavbarCollapse>
       </StyledContainer>
-    </Navbar>
+    </StyledNavBar>
   )
 }
 

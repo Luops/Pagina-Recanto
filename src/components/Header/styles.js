@@ -10,17 +10,24 @@ import {
     Form,
   } from 'react-bootstrap';
 
+export const StyledNavBar = styled(Navbar)`
+  -webkit-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.68); 
+  box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.68);
+  position: fixed;
+  width: 100%;
+`
+
 export const Logo = styled.a`
   font-size: 1.7em;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color:  rgba(220,95,59,1);
+  font-family: fantasy;
+  color: rgba(220,95,59,1);
   text-decoration: none;
   transition: .4s ease-in-out;
   &:hover {
     color: black;
   }
-
 `
+
 
 export const StyledContainer = styled(Container)`
   display: flex;
