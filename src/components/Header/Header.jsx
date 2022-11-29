@@ -8,7 +8,8 @@ import {
     StyledNavbarCollapse,
     StyledNav,
     StyledNavLink,
-    StyledNavBar
+    StyledNavBar,
+    Imagem
   } from "./styles"
 
 //Bootstrap
@@ -18,11 +19,18 @@ import {
     Navbar,
 } from 'react-bootstrap';
 
+//Imagens
+import LogoPreto from '../../img/LogoCasaPreto.png'
+import LogoBranco from '../../img/LogoCasaBranco.png'
+
+
 const Header = () => {
   return (
     <StyledNavBar collapseOnSelect expand="lg" bg="white" variant="white">
       <StyledContainer>
-        <Logo href="/" id='Logo'>Recanto</Logo>
+        <Logo href="/" id='Logo'>
+          <Imagem src={LogoPreto} alt="" />
+        </Logo>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <StyledNavbarCollapse id="responsive-navbar-nav" >
           <StyledNav>

@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 import { NavLink } from "react-router-dom";
 
+//Imagens
+import LogoPreto from '../../img/LogoCasaPreto.png'
+import LogoBranco from '../../img/LogoCasaBranco.png'
+
 import { 
     Container, 
     Nav, 
@@ -20,14 +24,14 @@ export const StyledNavBar = styled(Navbar)`
 export const Logo = styled.a`
   font-size: 1.7em;
   font-family: fantasy;
-  color: rgba(220,95,59,1);
+  color: rgb(243,178,25);
+  text-shadow: 1px 1px 0 #7A7A7A;
   text-decoration: none;
   transition: .4s ease-in-out;
   &:hover {
     color: black;
   }
 `
-
 
 export const StyledContainer = styled(Container)`
   display: flex;
@@ -48,5 +52,37 @@ export const StyledNav = styled(Nav)`
 
 export const StyledNavLink = styled(Nav.Link)`
   color: black;
-  
+  transition: .2s ease-in-out;
+  @media (max-width: 991px) {
+    width: 30rem;
+    &:nth-child(2):hover {
+    background: #111;
+    color: white;
+    border-radius: 2px;
+    }
+
+    &:nth-child(3):hover {
+    background: #111;
+    color: white;
+    border-radius: 2px;
+    }
+
+    &:nth-child(1):hover {
+    background: #111;
+    color: white;
+    border-radius: 2px;
+    }
+
+    &:nth-child(4):hover {
+    background: #111;
+    color: white;
+    border-radius: 2px;
+    }
+
+  }
+`
+
+export const Imagem = styled.img`
+  height: 30px;
+  width: auto;
 `

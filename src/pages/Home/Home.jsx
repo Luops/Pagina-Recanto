@@ -5,15 +5,26 @@ import React from 'react'
 //Styled components
 import { 
   Container,
-  SecaoLogo
+  SecaoLogo,
+  Imagem,
+  ContainerImagem,
+  ContainerSaiba
 } from "./styles.js"
+
+//Imagens
+import Logo from '../../img/logo.png'
 
 const Home = () => {
   return (
     <Container>
       {/* Seção que vai conter logo, background e slogan */}
       <SecaoLogo>
-
+        <ContainerImagem>
+          <Imagem src={Logo} alt="Logo-Recanto" />
+        </ContainerImagem>
+        <ContainerSaiba>
+          <h2 className='text-white fs-1'>Saiba mais</h2>
+        </ContainerSaiba>
       </SecaoLogo>
 
     </Container>
