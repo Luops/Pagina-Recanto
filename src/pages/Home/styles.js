@@ -40,3 +40,19 @@ export const Imagem = styled.img`
   height: 10rem;
   width: auto;
 `
+
+export const SecaoHistoria = styled.section`
+  width: 100%;
+  background-color: #111111;
+  color: white;
+  padding: 80px 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+`
+
+export const SecaoProduto = styled.section`
+  width: 100%;
+  background-color: #E5E0DA;
+  padding: 80px 10%;
+`
