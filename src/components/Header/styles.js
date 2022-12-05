@@ -19,6 +19,7 @@ export const StyledNavBar = styled(Navbar)`
   box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.68);
   position: fixed;
   width: 100%;
+  z-index: 2;
 `
 
 export const Logo = styled.a`

@@ -1,6 +1,7 @@
 import React from 'react'
 
 //Components
+import SlideComida from '../../components/SlideComida/SlideComida.jsx'
 
 //Styled components
 import { 
@@ -17,7 +18,6 @@ import {
 import Logo from '../../img/logo.png'
 
 //Dados
-import { productsHome } from '../../data/products.js'
 
 const Home = () => {
   return (
@@ -48,9 +48,9 @@ const Home = () => {
       <SecaoProduto>
         <h2>Nossos Produtos</h2>
         {/*Slide com os principais produtos */}
-        {productsHome && productsHome.map((Products) => (
-          <p key={Products.title}>{Products.title}</p>
-        ))}
+        <SlideComida/>
+        
+        
       </SecaoProduto>
 
     </Container>
