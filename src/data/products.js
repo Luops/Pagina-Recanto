@@ -1,7 +1,7 @@
 //Imagens
 import Cafe from '../img/Cafe.png'
 import Hamburger from '../img/hamburger.png'
-import Chopp from '../img/Chopp.png'
+import Chopp from '../img/choopp.png'
 
 
 export const productsHome = [

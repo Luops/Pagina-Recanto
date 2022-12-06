@@ -1,11 +1,15 @@
 import React from 'react'
 
+import { NavLink } from 'react-router-dom'
+
 //Styled components
 import {
     Container,
     Component,
     Titulo,
-    Imagem
+    Imagem,
+    Botao,
+    StyledNavLink
   } from "./styles"
 
 //Dados
@@ -38,6 +42,12 @@ const SlideComida = () => {
                     <Component>
                         <Titulo key={Products.title} >{Products.title}</Titulo>
                         <Imagem src={Products.image} alt={Products.title} key={Products.title}/>
+                        <StyledNavLink to="/" className="text-white">
+                          <Botao>
+                            Exibir Mais
+                          </Botao>
+                        </StyledNavLink>
+                       
                     </Component>
                 </SwiperSlide>
             ))}

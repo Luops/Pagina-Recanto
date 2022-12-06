@@ -34,10 +34,10 @@ const Header = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <StyledNavbarCollapse id="responsive-navbar-nav" >
           <StyledNav>
-            <StyledNavLink href="#Quem somos">Quem somos</StyledNavLink>
-            <StyledNavLink href="#Cardápio">Cardápio</StyledNavLink>
-            <StyledNavLink href="#Eventos">Eventos</StyledNavLink>
-            <StyledNavLink href="#Contatos">Contatos</StyledNavLink>
+            <StyledNavLink href="/quemsomos">Quem somos</StyledNavLink>
+            <StyledNavLink href="/cardapio">Cardápio</StyledNavLink>
+            <StyledNavLink href="/eventos">Eventos</StyledNavLink>
+            <StyledNavLink href="/contatos">Contatos</StyledNavLink>
           </StyledNav>
         </StyledNavbarCollapse>
       </StyledContainer>

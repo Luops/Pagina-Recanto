@@ -10,8 +10,11 @@ import {
   Imagem,
   ContainerImagem,
   ContainerSaiba,
+  TituloSaiba,
   SecaoHistoria,
-  SecaoProduto
+  TituloHistoria,
+  SecaoProduto,
+  TituloProdutos
 } from "./styles.js"
 
 //Imagens
@@ -28,11 +31,11 @@ const Home = () => {
           <Imagem src={Logo} alt="Logo-Recanto" />
         </ContainerImagem>
         <ContainerSaiba>
-          <h2 className='text-white fs-1'>Saiba mais</h2>
+          <TituloSaiba className='text-white fs-1'>Saiba mais</TituloSaiba>
         </ContainerSaiba>
       </SecaoLogo>
       <SecaoHistoria>
-          <h2>Nossa História</h2>
+          <TituloHistoria>Nossa História</TituloHistoria>
           <div>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id nisi beatae ipsum alias tempore, 
               blanditiis, velit modi, enim dolore voluptates quidem ipsam vitae quia nam quo repudiandae 
@@ -46,7 +49,7 @@ const Home = () => {
           </div>
       </SecaoHistoria>
       <SecaoProduto>
-        <h2>Nossos Produtos</h2>
+        <TituloProdutos>Nossos Produtos</TituloProdutos>
         {/*Slide com os principais produtos */}
         <SlideComida/>
         

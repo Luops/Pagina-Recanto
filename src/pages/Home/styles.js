@@ -36,6 +36,10 @@ export const ContainerSaiba = styled.div`
   width: 100%;
 `
 
+export const TituloSaiba = styled.h2`
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+`
+
 export const Imagem = styled.img`
   height: 10rem;
   width: auto;
@@ -51,8 +55,16 @@ export const SecaoHistoria = styled.section`
   gap: 50px;
 `
 
+export const TituloHistoria = styled.h2`
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+`
+
 export const SecaoProduto = styled.section`
   width: 100%;
   background-color: #E5E0DA;
   padding: 80px 10%;
+`
+
+export const TituloProdutos = styled.h2`
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 `
