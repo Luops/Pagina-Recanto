@@ -2,6 +2,7 @@ import React from 'react'
 
 //Components
 import SlideComida from '../../components/SlideComida/SlideComida.jsx'
+import SlideEventos from '../../components/SlideEventos/SlideEventos.jsx'
 
 //Styled components
 import { 
@@ -16,12 +17,11 @@ import {
   SecaoProduto,
   TituloProdutos,
   SecaoEvento,
-  Eventos,
-  ImagemEventos
 } from "./styles.js"
 
 //Imagens
 import Logo from '../../img/logo.png'
+import Musica from '../../img/musica-aovivo.jpg'
 
 //Dados
 
@@ -62,9 +62,11 @@ const Home = () => {
       </SecaoProduto>
       {/* Seção que vai conter os eventos*/}
       <SecaoEvento>
+        <SlideEventos/>
+        {/* 
           <Eventos>
-            <h3>Próximos Eventos</h3>
-            <h3>Nome do evento</h3>
+            <TxtProximo>Próximos Eventos</TxtProximo>
+            <TxtNome>Nome do evento</TxtNome>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae mollitia suscipit quisquam, 
               iure sint assumenda ea sequi voluptates molestias accusantium doloremque dolorem, provident 
               eum fugit, alias harum incidunt facere quas. Suscipit tempora, inventore labore natus doloribus
@@ -73,13 +75,15 @@ const Home = () => {
                in corrupti possimus cupiditate culpa. Natus unde, optio dolorem veritatis cum assumenda esse 
                id dolorum non cupiditate tempora temporibus harum est reiciendis facere veniam explicabo 
                officia delectus dicta omnis suscipit! Sunt totam placeat pariatur ullam excepturi, aut 
-               repellendus quos!
+               repellendus quos! 
             </p>
+            <div className='d-flex'>
+              <p className='fw-bold'>Data:</p>&nbsp;<p>21/12/2022 às 20h</p>
+            </div>
           </Eventos>
-          <ImagemEventos>
-            {/*Imagem virá de uma API, e esta imagem foi inserida por um formulário*/}
-
-          </ImagemEventos>
+          <ImagemEventos src={Musica} alt="Evento"/>
+        */}
+            
       </SecaoEvento>
 
 

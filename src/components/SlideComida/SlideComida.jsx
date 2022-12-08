@@ -13,7 +13,7 @@ import {
   } from "./styles"
 
 //Dados
-import { productsHome } from '../../data/products.js'
+import { productsHome } from '../../data/datas.js'
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";

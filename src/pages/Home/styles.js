@@ -82,19 +82,3 @@ export const SecaoEvento = styled.section`
   -moz-box-shadow: 5px 9px 32px 0px rgba(133,133,133,1);
   box-shadow: 5px 9px 32px 0px rgba(133,133,133,1);
 `
-
-export const Eventos = styled.div`
-  width: 55%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 0 15px;
-  text-align: justify; 
-`
-
-export const ImagemEventos = styled.img`
-  border: none;
-  background-size: cover;
-  background-position: center;
-`
