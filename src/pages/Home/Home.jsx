@@ -21,9 +21,6 @@ import {
 
 //Imagens
 import Logo from '../../img/logo.png'
-import Musica from '../../img/musica-aovivo.jpg'
-
-//Dados
 
 const Home = () => {
   return (
@@ -63,30 +60,7 @@ const Home = () => {
       {/* Seção que vai conter os eventos*/}
       <SecaoEvento>
         <SlideEventos/>
-        {/* 
-          <Eventos>
-            <TxtProximo>Próximos Eventos</TxtProximo>
-            <TxtNome>Nome do evento</TxtNome>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae mollitia suscipit quisquam, 
-              iure sint assumenda ea sequi voluptates molestias accusantium doloremque dolorem, provident 
-              eum fugit, alias harum incidunt facere quas. Suscipit tempora, inventore labore natus doloribus
-               asperiores reiciendis consequatur. Consectetur dicta a eum ad temporibus voluptatum beatae 
-               commodi laboriosam quaerat eaque aperiam impedit quis autem eos numquam rerum nam modi, velit 
-               in corrupti possimus cupiditate culpa. Natus unde, optio dolorem veritatis cum assumenda esse 
-               id dolorum non cupiditate tempora temporibus harum est reiciendis facere veniam explicabo 
-               officia delectus dicta omnis suscipit! Sunt totam placeat pariatur ullam excepturi, aut 
-               repellendus quos! 
-            </p>
-            <div className='d-flex'>
-              <p className='fw-bold'>Data:</p>&nbsp;<p>21/12/2022 às 20h</p>
-            </div>
-          </Eventos>
-          <ImagemEventos src={Musica} alt="Evento"/>
-        */}
-            
       </SecaoEvento>
-
-
     </Container>
   )
 }

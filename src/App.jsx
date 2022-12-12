@@ -21,6 +21,7 @@ import Contatos from './pages/Contatos/Contatos'
 
 //Components
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 //Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -39,6 +40,7 @@ function App() {
             <Route path="/contatos" element={ <Contatos/>} />
           </Routes>
         </div>
+        <Footer/>
       </BrowserRouter>
     </div>
   );
