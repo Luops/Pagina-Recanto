@@ -1,7 +1,12 @@
 import React from 'react'
 
 //Icons
-import { FaMapMarkerAlt } from "react-icons/fa";
+import { 
+    FaMapMarkerAlt,
+    FaFacebook,
+    FaInstagramSquare,
+    FaWhatsappSquare 
+} from "react-icons/fa";
 
 //Styled components
 import {
@@ -11,7 +16,17 @@ import {
     ImgLogo,
     TxtFooter,
     Localizacao,
-
+    Copyright,
+    Redes,
+    DivContato,
+    TxtContato,
+    Formulario,
+    DivNomeCel,
+    LabelNome,
+    LabelCelular,
+    LabelEmail,
+    LabelTexto,
+    Botao
   } from "./styles"
 
 //Imagens
@@ -21,6 +36,14 @@ const Footer = () => {
     const address = [
         {name: 'address', icon: <FaMapMarkerAlt/>,}
     ]
+
+    const redes = [
+        {name: 'Facebook', icon: <FaFacebook/>, URL:""},
+        {name: 'Instagram', icon: <FaInstagramSquare/>, URL:""},
+        {name: 'Wpp', icon: <FaWhatsappSquare/>, URL:""},
+    ]
+
+
   return (
     <Container>
         <DivRestaurante>
@@ -45,10 +68,47 @@ const Footer = () => {
                     Inserir a localização aqui
                 </p>
             </Localizacao>
-
+            <div className='d-flex align-items-center'>
+                <Copyright>
+                    &copy;NOME DA COMPANHIA 2022. TODOS OS DIREITOS RESERVADOS.
+                </Copyright>
+                <Redes>
+                    {redes.map((redes) => (
+                        <a href={redes.URL} className="text-white">
+                            <i className='fs-4'>
+                                {redes.icon}
+                            </i>
+                        </a>
+                    ))}
+                </Redes>
+            </div>
         </DivRestaurante>
         <DivForm>
-
+            <Formulario action="" onSubmit="{}">
+                <DivContato>
+                    <TxtContato>Entre em contato</TxtContato>
+                </DivContato>
+                <DivNomeCel>
+                    <LabelNome htmlFor="">
+                        <input type="text" placeholder='NOME'/>
+                    </LabelNome>
+                    <LabelCelular htmlFor="">
+                        <input type="text" placeholder='CELULAR'/>
+                    </LabelCelular>
+                </DivNomeCel>
+                <LabelEmail htmlFor="">
+                    <input type="email" placeholder='E-MAIL'/>
+                </LabelEmail>
+                <LabelTexto htmlFor="">
+                    <textarea 
+                    name="" 
+                    id="" 
+                    rows="10"
+                    placeholder='Escreva aqui o que você deseja'
+                    ></textarea>
+                </LabelTexto>
+                <Botao>Enviar</Botao>
+            </Formulario>
         </DivForm>
     </Container>
   )
