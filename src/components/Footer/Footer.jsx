@@ -8,6 +8,16 @@ import {
     FaWhatsappSquare 
 } from "react-icons/fa";
 
+import {
+    IoLogoWhatsapp,
+} from "react-icons/io"
+
+import {
+    AiFillInstagram
+} from "react-icons/ai"
+
+
+
 //Styled components
 import {
     Container,
@@ -39,8 +49,8 @@ const Footer = () => {
 
     const redes = [
         {name: 'Facebook', icon: <FaFacebook/>, URL:""},
-        {name: 'Instagram', icon: <FaInstagramSquare/>, URL:""},
-        {name: 'Wpp', icon: <FaWhatsappSquare/>, URL:""},
+        {name: 'Instagram', icon: <AiFillInstagram/>, URL:""},
+        {name: 'Wpp', icon: <IoLogoWhatsapp/>, URL:""},
     ]
 
 

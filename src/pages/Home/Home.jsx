@@ -7,6 +7,9 @@ import SlideEventos from '../../components/SlideEventos/SlideEventos.jsx'
 //Styled components
 import { 
   Container,
+  SecaoLogo2,
+  Lanchonete,
+  DivLanche,
   SecaoLogo,
   Imagem,
   ContainerImagem,
@@ -21,11 +24,13 @@ import {
 
 //Imagens
 import Logo from '../../img/logo.png'
+import Lanche from '../../img/Lanche.png'
 
 const Home = () => {
   return (
     <Container>
       {/* Seção que vai conter logo, background e slogan */}
+      {/* 
       <SecaoLogo>
         <ContainerImagem>
           <Imagem src={Logo} alt="Logo-Recanto" />
@@ -34,6 +39,20 @@ const Home = () => {
           <TituloSaiba className='text-white fs-1'>Saiba mais</TituloSaiba>
         </ContainerSaiba>
       </SecaoLogo>
+      */}
+      <SecaoLogo2>
+        <Lanchonete>
+          <h3>Lanchonete</h3>
+          <p>Seja Bem-Vindo ao nosso site.</p>
+          <p>Acesse nosso cardápio digital ou entre em contato conosco.</p>
+          <div>
+            <button>Cardápio</button>
+          </div>
+        </Lanchonete>
+        <DivLanche>
+          <img src={Lanche} alt="Lanche" />
+        </DivLanche>
+      </SecaoLogo2>
       {/* Seção que vai conter somente a história do estabelecimento*/}
       <SecaoHistoria>
           <TituloHistoria>Nossa História</TituloHistoria>

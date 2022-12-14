@@ -16,6 +16,77 @@ export const Container = styled.div`
   background-color: #E5E0DA;
 `
 
+export const SecaoLogo2 = styled.section`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+`
+
+export const Lanchonete = styled.div`
+  width: 50%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  > h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5.5em;
+    color: #414141;
+    text-shadow: 4px 3px 0 rgba(138,138,138,0.65);
+    width: 80%;
+    align-self: flex-end;
+    text-align: start;
+  }
+  > p {
+    width: 80%;
+    font-size: 1.1em;
+    align-self: flex-end;
+    text-align: start;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #414141;
+    text-shadow: 2px 1px 0 rgba(138,138,138,0.65);
+    letter-spacing: 1.5px;
+  }
+  > div {
+    height: 50px;
+    width: 80%;
+    align-self: flex-end;
+    text-align: start;
+  }
+
+  > div > button {
+    border: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    letter-spacing: 1.5px;
+    padding: 5px 25px;
+    background: rgb(226,74,27);
+    background: -moz-linear-gradient(0deg, rgba(226,74,27,1) 0%, rgba(229,136,4,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(226,74,27,1) 0%, rgba(229,136,4,1) 100%);
+    background: linear-gradient(0deg, rgba(226,74,27,1) 0%, rgba(229,136,4,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e24a1b",endColorstr="#e58804",GradientType=1);
+    transition: .4s ease-in-out;
+    &:hover {
+      transform: scale(1.01);
+      border: 1px solid gray;
+      box-shadow: 3px 2px 0 rgba(138,138,138,0.65);
+    }
+  }
+`
+
+export const DivLanche = styled.div`
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  > img {
+    width: 700px;
+    margin-left: -200px;
+    margin-bottom: 50px;
+  }
+`
+
 export const SecaoLogo = styled.section`
   background: rgba(0,0,0,0.5) url(${Background});
   background-blend-mode: darken;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 
 //Styled components
@@ -25,8 +25,20 @@ import LogoBranco from '../../img/LogoCasaBranco.png'
 
 
 const Header = () => {
+  const [navBar, setNavBar] = useState(false);
+
+  const changeBackground = () => {
+    if(window.scrollY >= 80) {
+      setNavBar(true) 
+    } else {
+      setNavBar(false)
+    }
+
+  }
+  window.addEventListener('scroll', changeBackground)
+
   return (
-    <StyledNavBar collapseOnSelect expand="lg" bg="white" variant="white">
+    <StyledNavBar collapseOnSelect expand="lg" bg={navBar ? "white" : "transparent"} variant="white">
       <StyledContainer>
         <Logo href="/" id='Logo'>
           <Imagem src={LogoPreto} alt="" />
