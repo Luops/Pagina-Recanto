@@ -23,26 +23,33 @@ export const SecaoLogo2 = styled.section`
   position: relative;
   align-items: center;
   justify-content: center;
+  @media (max-width: 869px) {
+    flex-direction: column;
+    margin: 50px 0;
+  }
 `
 
 export const Lanchonete = styled.div`
-  width: 50%;
+  width: 100%;
   z-index: 1;
   display: flex;
   flex-direction: column;
+  padding-left: 15%;
   > h3 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 5.5em;
     color: #414141;
     text-shadow: 4px 3px 0 rgba(138,138,138,0.65);
-    width: 80%;
-    align-self: flex-end;
+    width: 100%;
+    margin-block-end: 0 !important;
+    margin-block-start: 0 !important;
+    align-self: flex-start;
     text-align: start;
   }
   > p {
     width: 80%;
     font-size: 1.1em;
-    align-self: flex-end;
+    align-self: flex-start;
     text-align: start;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #414141;
@@ -53,6 +60,8 @@ export const Lanchonete = styled.div`
     height: 50px;
     width: 80%;
     align-self: flex-end;
+    text-align: start;
+    align-self: flex-start;
     text-align: start;
   }
 
@@ -74,6 +83,52 @@ export const Lanchonete = styled.div`
       box-shadow: 3px 2px 0 rgba(138,138,138,0.65);
     }
   }
+  @media (min-width: 1440px) {
+    > h3 {
+      font-size: 7.5em;
+    }
+  }
+  @media (max-width: 1146px) {
+    margin-bottom: 150px;
+    > h3 {
+      width: 700px;
+    }
+  }
+  @media (max-width: 869px) {
+    width: 100%;
+    margin-top: 8%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    > h3 {
+      margin-block-end: 0 !important;
+      margin-block-start: 0 !important;
+      width: 100%;
+    }
+  }
+  @media (max-width: 710px) {
+    padding-left: 8%;
+    > h3 {
+      font-size: 3.8em;
+    }
+  }
+  @media (max-width: 550px) {
+    padding-left: 8%;
+    > h3 {
+      font-size: 3em;
+    }
+    > p {
+      font-size: .85em;
+    }
+  }
+  @media (max-width: 400px) {
+    padding-left: 6%;
+    > h3 {
+      font-size: 2.8em;
+    }
+    > p {
+      font-size: .75em;
+    }
+  }
 `
 
 export const DivLanche = styled.div`
@@ -82,9 +137,49 @@ export const DivLanche = styled.div`
   align-items: flex-start;
   > img {
     width: 700px;
-    margin-left: -200px;
+    margin-left: -400px;
     margin-bottom: 50px;
   }
+  @media (max-width: 1146px) {
+    > img {
+    margin-left: -550px;
+    }
+  }
+  @media (max-width: 1028px) {
+    > img {
+    margin-left: -600px;
+    }
+  }
+  @media (max-width: 946px) {
+    > img {
+    margin-left: -650px;
+    }
+  }
+  @media (max-width: 869px) {
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center;
+    > img {
+      margin-left: 0px;
+      margin-top: -320px;
+    }
+  }
+  @media (max-width: 825px) {
+    > img {
+      width: 140%;
+    }
+  }
+  @media (max-width: 550px) {
+    > img {
+      margin-top: -250px;
+    }
+  }
+  @media (max-width: 400px) {
+    > img {
+      width: 180%;
+    }
+  }
+  
 `
 
 export const SecaoLogo = styled.section`
@@ -123,10 +218,14 @@ export const SecaoHistoria = styled.section`
   width: 100%;
   background-color: #111111;
   color: white;
-  padding: 80px 10%;
+  padding: 150px 10%;
   display: flex;
   flex-direction: column;
   gap: 50px;
+
+  > div > p {
+    text-align: justify;
+  }
 `
 
 export const TituloHistoria = styled.h2`
@@ -135,7 +234,7 @@ export const TituloHistoria = styled.h2`
 
 export const SecaoProduto = styled.section`
   width: 100%;
-  padding: 80px 10%;
+  padding: 80px 0%;
 `
 
 export const TituloProdutos = styled.h2`

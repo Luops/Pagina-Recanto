@@ -19,6 +19,7 @@ export const Component = styled.div`
   margin-top: 30px;
   z-index: 0;
   gap: 20px;
+  width: 100%;
 `
 
 export const Titulo = styled.h2`
@@ -29,6 +30,9 @@ export const Titulo = styled.h2`
 
 export const Imagem = styled.img`
   height: 250px;
+  @media (min-width: 1440px) {
+    height: 350px;
+  }
 `
 
 export const Botao = styled.button`

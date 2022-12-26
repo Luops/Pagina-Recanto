@@ -1,4 +1,6 @@
-import React, { useRef, useState } from 'react'
+import axios from "axios"
+
+import React, { useRef, useState, useEffect } from 'react'
 
 import { NavLink } from 'react-router-dom'
 
@@ -9,7 +11,8 @@ import {
     Eventos,
     ImagemEventos,
     TxtProximo,
-    TxtNome
+    TxtNome,
+    TxtEvento
   } from "./styles"
 
 //Dados
@@ -27,6 +30,26 @@ import "swiper/css/pagination";
 import {Pagination } from "swiper";
 
 const SlideEventos = () => {
+
+  const [eventsAPI, setEventsAPI] = useState([])
+
+  const getEvents = async() => {
+    
+    try {
+      const response = await axios.get("") //Colocar o site da API aqui
+      
+      const data = response.data;
+      setEventsAPI(data)
+    } catch (error) {
+      console.log(error)
+    }
+
+  }
+
+  useEffect(() => {
+    getEvents();
+  }, [])
+
 
   return (
     <Container>
@@ -46,7 +69,8 @@ const SlideEventos = () => {
                        <Eventos>
                         <TxtProximo>Evento</TxtProximo>
                         <TxtNome>{Event.title}</TxtNome>
-                        {Event.text}
+                        <TxtEvento>{Event.text}</TxtEvento>
+                        
                         <div className='d-flex'>
                           <p className='fw-bold'>Data:</p>&nbsp;<p>{Event.date} às {Event.hour}h{Event.minutes}min</p>
                         </div>

@@ -10,6 +10,11 @@ export const Container = styled.div`
     background-size: cover;
     background-position: center;
     display: flex;
+    @media (max-width: 920px) {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
 `
 export const DivRestaurante = styled.div`
     display: flex;
@@ -19,6 +24,35 @@ export const DivRestaurante = styled.div`
     width: 55%;
     padding: 5em 1.5em;
     gap: 50px;
+    @media (max-width: 920px) {
+        width: 650px;
+        padding: 5em 0em;
+        align-items: center;
+    }
+    @media (max-width: 725px) {
+        width: 500px;
+        align-items: center;
+    }
+    @media (max-width: 574px) {
+        width: 400px;
+        align-items: center;
+    }
+    @media (max-width: 478px) {
+        width: 320px;
+        align-items: center;
+    }
+    @media (max-width: 372px) {
+        width: 290px;
+        align-items: center;
+    }
+`
+
+export const DivLogo = styled.div`
+    display: flex;
+    @media (max-width: 575px) {
+        flex-direction: column;
+        gap: 15px;
+    }
 `
 
 export const DivForm = styled.div`
@@ -29,6 +63,13 @@ export const DivForm = styled.div`
     width: 45%;
     padding: 0.2em 0.5em;
     padding-top: 25px;
+    @media (max-width: 920px) {
+        width: 100%;
+    }
+    @media (max-width: 535px) {
+        padding: 1em 1.5em;
+        padding-top: 50px;
+    }
 `
 
 export const ImgLogo = styled.img`
@@ -38,6 +79,8 @@ export const ImgLogo = styled.img`
 export const TxtFooter = styled.p`
     color: white;
     text-align: justify;
+    width: 100%;
+    font-size: 0.95em;
 `
 
 export const Localizacao = styled.address`
@@ -49,7 +92,7 @@ export const Localizacao = styled.address`
 `
 export const Copyright = styled.p`
     color: white;
-    font-size: 0.95em;
+    font-size: 0.8em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 1px;
     margin-top: 20px;
@@ -67,10 +110,19 @@ export const Formulario = styled.form`
     display: flex;
     flex-direction: column;
     gap: 25px;
-    width: 75%;
+    width: 85%;
     background-color: white;
     padding: 15px;
     border-radius: 5px;
+    @media (max-width: 1100px) {
+        width: 100%;
+    }
+    @media (max-width: 920px) {
+        width: 500px;
+    }
+    @media (max-width: 535px) {
+        width: 100%;
+    }
 `
 export const DivContato = styled.div`
     width: 100%; 

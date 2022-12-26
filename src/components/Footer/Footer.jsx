@@ -23,6 +23,7 @@ import {
     Container,
     DivRestaurante,
     DivForm,
+    DivLogo,
     ImgLogo,
     TxtFooter,
     Localizacao,
@@ -57,10 +58,10 @@ const Footer = () => {
   return (
     <Container>
         <DivRestaurante>
-            <div className='d-flex align-items-center'>
+            <DivLogo className='d-flex align-items-center'>
                 <ImgLogo src={Logo} alt="Logo restaurante" />
-                <h3 className='text-white fs-1 fw-bold'>Nome Restaurante</h3>
-            </div>
+                <h3 className='text-white fs-1 fw-bold'>Restaurant Suit</h3>
+            </DivLogo>
             <TxtFooter>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, pariatur? 
                 Sequi distinctio fuga inventore corrupti? Tempora, magnam natus. Dolorum eligendi 
@@ -80,7 +81,7 @@ const Footer = () => {
             </Localizacao>
             <div className='d-flex align-items-center'>
                 <Copyright>
-                    &copy;NOME DA COMPANHIA 2022. TODOS OS DIREITOS RESERVADOS.
+                    &copy;Restaurant Suit 2022. TODOS OS DIREITOS RESERVADOS.
                 </Copyright>
                 <Redes>
                     {redes.map((redes) => (

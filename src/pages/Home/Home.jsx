@@ -42,7 +42,7 @@ const Home = () => {
       */}
       <SecaoLogo2>
         <Lanchonete>
-          <h3>Lanchonete</h3>
+          <h3>Restaurant Suit</h3>
           <p>Seja Bem-Vindo ao nosso site.</p>
           <p>Acesse nosso cardápio digital ou entre em contato conosco.</p>
           <div>
