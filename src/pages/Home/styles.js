@@ -234,7 +234,7 @@ export const TituloHistoria = styled.h2`
 
 export const SecaoProduto = styled.section`
   width: 100%;
-  padding: 80px 0%;
+  padding: 110px 0%;
 `
 
 export const TituloProdutos = styled.h2`
@@ -242,6 +242,12 @@ export const TituloProdutos = styled.h2`
 `
 
 export const SecaoEvento = styled.section`
+  width: 100%;
+  padding-top: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  > div {
   width: 95%;
   display: flex;
   min-height: 400px;
@@ -251,4 +257,5 @@ export const SecaoEvento = styled.section`
   -webkit-box-shadow: 5px 9px 32px 0px rgba(133,133,133,1);
   -moz-box-shadow: 5px 9px 32px 0px rgba(133,133,133,1);
   box-shadow: 5px 9px 32px 0px rgba(133,133,133,1);
+}
 `

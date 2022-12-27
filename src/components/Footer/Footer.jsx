@@ -56,7 +56,7 @@ const Footer = () => {
 
 
   return (
-    <Container>
+    <Container id="contatos">
         <DivRestaurante>
             <DivLogo className='d-flex align-items-center'>
                 <ImgLogo src={Logo} alt="Logo restaurante" />

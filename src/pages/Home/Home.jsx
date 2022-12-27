@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef} from 'react'
 
 //Components
 import SlideComida from '../../components/SlideComida/SlideComida.jsx'
@@ -26,7 +26,9 @@ import {
 import Logo from '../../img/logo.png'
 import Lanche from '../../img/Lanche.png'
 
+
 const Home = () => {
+
   return (
     <Container>
       {/* Seção que vai conter logo, background e slogan */}
@@ -54,7 +56,7 @@ const Home = () => {
         </DivLanche>
       </SecaoLogo2>
       {/* Seção que vai conter somente a história do estabelecimento*/}
-      <SecaoHistoria>
+      <SecaoHistoria id='quemsomos'>
           <TituloHistoria>Nossa História</TituloHistoria>
           <div>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id nisi beatae ipsum alias tempore, 
@@ -69,7 +71,7 @@ const Home = () => {
           </div>
       </SecaoHistoria>
       {/* Seção que vai conter somente os produtos genéricos para escolher e ir para a página*/}
-      <SecaoProduto>
+      <SecaoProduto id="cardapio">
         <TituloProdutos>Escolha algum produto</TituloProdutos>
         {/*Slide com os principais produtos */}
         <SlideComida/>
@@ -77,8 +79,10 @@ const Home = () => {
         
       </SecaoProduto>
       {/* Seção que vai conter os eventos*/}
-      <SecaoEvento>
-        <SlideEventos/>
+      <SecaoEvento id="eventos">
+        <div>
+          <SlideEventos/>
+        </div>
       </SecaoEvento>
     </Container>
   )

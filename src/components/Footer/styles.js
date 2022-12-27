@@ -10,6 +10,7 @@ export const Container = styled.div`
     background-size: cover;
     background-position: center;
     display: flex;
+    padding-top: 90px;
     @media (max-width: 920px) {
         flex-direction: column-reverse;
         align-items: center;

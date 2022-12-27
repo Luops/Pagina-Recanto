@@ -36,10 +36,11 @@ const SlideEventos = () => {
   const getEvents = async() => {
     
     try {
-      const response = await axios.get("") //Colocar o site da API aqui
+      const response = await axios.get("http://restaurantsuitapi.kinghost.net/api/events") //Colocar o site da API aqui
       
       const data = response.data;
       setEventsAPI(data)
+      console.log(data)
     } catch (error) {
       console.log(error)
     }
@@ -63,14 +64,13 @@ const SlideEventos = () => {
         }}
         modules={[Pagination]}
         className="mySwiper">
-            {events && events.map((Event) => (
+            {eventsAPI && eventsAPI.map((Event) => (
                 <SwiperSlide>
                     <Component>
                        <Eventos>
                         <TxtProximo>Evento</TxtProximo>
                         <TxtNome>{Event.title}</TxtNome>
-                        <TxtEvento>{Event.text}</TxtEvento>
-                        
+                        <TxtEvento>{Event.description}</TxtEvento>
                         <div className='d-flex'>
                           <p className='fw-bold'>Data:</p>&nbsp;<p>{Event.date} às {Event.hour}h{Event.minutes}min</p>
                         </div>

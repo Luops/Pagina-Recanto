@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import { NavLink } from "react-router-dom";
+import {Link} from 'react-scroll'
 
 //Imagens
 import LogoPreto from '../../img/LogoCasaPreto.png'
@@ -49,11 +50,14 @@ export const StyledNavbarCollapse = styled(Navbar.Collapse)`
 `
 
 export const StyledNav = styled(Nav)`
+gap: 15px;
 `
 
-export const StyledNavLink = styled(Nav.Link)`
+export const StyledNavLink = styled(Link)`
   color: black;
   transition: .2s ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
   @media (max-width: 991px) {
     width: 30rem;
     &:nth-child(2):hover {
@@ -79,7 +83,9 @@ export const StyledNavLink = styled(Nav.Link)`
     color: white;
     border-radius: 2px;
     }
-
+  }
+  &:hover{
+    color: black;
   }
 `
 
