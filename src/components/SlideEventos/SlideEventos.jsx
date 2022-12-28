@@ -65,8 +65,8 @@ const SlideEventos = () => {
         modules={[Pagination]}
         className="mySwiper">
             {eventsAPI && eventsAPI.map((Event) => (
-                <SwiperSlide>
-                    <Component>
+                <SwiperSlide key={Event.id}>
+                    <Component key={Event.id}>
                        <Eventos>
                         <TxtProximo>Evento</TxtProximo>
                         <TxtNome>{Event.title}</TxtNome>

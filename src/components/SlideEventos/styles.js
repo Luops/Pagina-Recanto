@@ -42,7 +42,7 @@ export const ImagemEventos = styled.img`
   border: none;
   background-size: cover;
   background-position: center;
-  max-height: 380px;
+  height: 380px;
   width: 45%;
   border-radius: 0px 10px 10px 0px;
   

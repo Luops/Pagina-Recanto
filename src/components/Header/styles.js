@@ -46,11 +46,24 @@ export const StyledNavbarCollapse = styled(Navbar.Collapse)`
   justify-content: flex-end;
   @media (max-width: 991px) {
     justify-content: center;
+    align-items: center;
   }
 `
 
 export const StyledNav = styled(Nav)`
-gap: 15px;
+  gap: 20px;
+  @media (max-width: 991px) {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    &:nth-child(2):hover {
+    background: #111;
+    color: white;
+    border-radius: 2px;
+    }
+  }
 `
 
 export const StyledNavLink = styled(Link)`
@@ -59,7 +72,10 @@ export const StyledNavLink = styled(Link)`
   text-decoration: none;
   cursor: pointer;
   @media (max-width: 991px) {
-    width: 30rem;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
     &:nth-child(2):hover {
     background: #111;
     color: white;
