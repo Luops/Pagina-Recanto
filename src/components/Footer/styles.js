@@ -231,6 +231,7 @@ export const LabelTexto = styled.label`
 export const Botao = styled.button`
     font-size: 1.25em;
     font-weight: bold;
+    color: black;
     padding: 10px;
     border-radius: 5px;
     border: 2px solid #ccc;
