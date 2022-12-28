@@ -16,7 +16,7 @@ export const Container = styled.div`
   background-color: #E5E0DA;
 `
 
-export const SecaoLogo2 = styled.section`
+export const SecaoLogo = styled.section`
   width: 100%;
   height: 100vh;
   display: flex;
@@ -53,7 +53,6 @@ export const Lanchonete = styled.div`
     text-align: start;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #414141;
-    text-shadow: 2px 1px 0 rgba(138,138,138,0.65);
     letter-spacing: 1.5px;
   }
   > div {
@@ -180,20 +179,6 @@ export const DivLanche = styled.div`
     }
   }
   
-`
-
-export const SecaoLogo = styled.section`
-  background: rgba(0,0,0,0.5) url(${Background});
-  background-blend-mode: darken;
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  padding: 50px 10px;
 `
 
 export const ContainerImagem = styled.div`

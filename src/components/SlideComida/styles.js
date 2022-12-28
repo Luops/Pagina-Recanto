@@ -9,6 +9,10 @@ import {
 
 export const Container = styled.div`
   width: 100%;
+  padding: 0px 15%;
+  @media (max-width: 730px) {
+    padding: 0px 0px;
+  }
 `
 
 export const Component = styled.div`
@@ -20,6 +24,7 @@ export const Component = styled.div`
   z-index: 0;
   gap: 20px;
   width: 100%;
+  
 `
 
 export const Titulo = styled.h2`

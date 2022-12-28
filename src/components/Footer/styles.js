@@ -133,7 +133,7 @@ export const DivContato = styled.div`
 export const TxtContato = styled.h3`
     color: #616161;
     text-shadow: #e0e0e0 2px 2px 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
     letter-spacing: 1px;
 `
 
@@ -145,8 +145,6 @@ export const DivNomeCel = styled.div`
 
 export const LabelNome = styled.label`
     width: 50%;
-    color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     > input {
         width: 100%;
         border: none;
@@ -162,14 +160,12 @@ export const LabelNome = styled.label`
     }
     > input::placeholder {
         color: gray;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        letter-spacing: 1px;
+        font-weight: bold;
     }
 `
 
 export const LabelCelular = styled.label`
     width: 50%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     > input {
         width: 100%;
         border: none;
@@ -185,14 +181,12 @@ export const LabelCelular = styled.label`
     }
     > input::placeholder {
         color: gray;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        letter-spacing: 1px;
+        font-weight: bold;
     }
 `
 
 export const LabelEmail = styled.label`
     width: 100%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     > input {
         width: 100%;
         border: none;
@@ -208,14 +202,14 @@ export const LabelEmail = styled.label`
     }
     > input::placeholder {
         color: gray;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        letter-spacing: 1px;
+        font-weight: bold;
     }
 `
 
 export const LabelTexto = styled.label`
     width: 100%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
     > textarea {
         width: 100%;
         border-radius: 5px;
@@ -229,15 +223,14 @@ export const LabelTexto = styled.label`
     }
     > textarea::placeholder {
         color: gray;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        letter-spacing: 1px;
+        font-weight: bold;
+        letter-spacing: 2px;
     }
 `
 
 export const Botao = styled.button`
     font-size: 1.25em;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    letter-spacing: 1px;
+    font-weight: bold;
     padding: 10px;
     border-radius: 5px;
     border: 2px solid #ccc;

@@ -7,10 +7,9 @@ import SlideEventos from '../../components/SlideEventos/SlideEventos.jsx'
 //Styled components
 import { 
   Container,
-  SecaoLogo2,
+  SecaoLogo,
   Lanchonete,
   DivLanche,
-  SecaoLogo,
   Imagem,
   ContainerImagem,
   ContainerSaiba,
@@ -32,17 +31,7 @@ const Home = () => {
   return (
     <Container>
       {/* Seção que vai conter logo, background e slogan */}
-      {/* 
       <SecaoLogo>
-        <ContainerImagem>
-          <Imagem src={Logo} alt="Logo-Recanto" />
-        </ContainerImagem>
-        <ContainerSaiba>
-          <TituloSaiba className='text-white fs-1'>Saiba mais</TituloSaiba>
-        </ContainerSaiba>
-      </SecaoLogo>
-      */}
-      <SecaoLogo2>
         <Lanchonete>
           <h3>Restaurant Suit</h3>
           <p>Seja Bem-Vindo ao nosso site.</p>
@@ -54,7 +43,7 @@ const Home = () => {
         <DivLanche>
           <img src={Lanche} alt="Lanche" />
         </DivLanche>
-      </SecaoLogo2>
+      </SecaoLogo>
       {/* Seção que vai conter somente a história do estabelecimento*/}
       <SecaoHistoria id='quemsomos'>
           <TituloHistoria>Nossa História</TituloHistoria>
